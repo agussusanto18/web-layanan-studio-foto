@@ -1,0 +1,6 @@
+[17-Apr-2022 06:06:51 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/otnasussuga/public_html/demo/jasaphoto/includes/config.php on line 8
+[17-Apr-2022 06:06:51 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/otnasussuga/public_html/demo/jasaphoto/includes/config.php on line 8
+[17-Apr-2022 06:06:51 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/otnasussuga/public_html/demo/jasaphoto/includes/config.php on line 8
+[17-Apr-2022 06:06:51 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/otnasussuga/public_html/demo/jasaphoto/includes/config.php on line 8
+[17-Apr-2022 06:08:48 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/otnasussuga/public_html/demo/jasaphoto/includes/config.php on line 8
+[17-Apr-2022 06:09:10 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/otnasussuga/public_html/demo/jasaphoto/includes/config.php on line 8
