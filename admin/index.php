@@ -41,7 +41,7 @@ if(mysqli_num_rows($query)>0){
 
 <body>
 	
-	<div class="login-page bk-img" style="background-image: url(img/login-bg1.jpg);">
+	<div class="login-page bk-img" style="background-image: url(../assets/images/banner-image.jpg);">
 		<div class="form-content">
 			<div class="container">
 				<div class="row">

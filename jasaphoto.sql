@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 17, 2022 at 11:22 AM
--- Server version: 10.3.32-MariaDB
--- PHP Version: 7.4.26
+-- Waktu pembuatan: 21 Jun 2022 pada 14.41
+-- Versi server: 10.3.32-MariaDB
+-- Versi PHP: 7.4.26
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `admin`
+-- Struktur dari tabel `admin`
 --
 
 CREATE TABLE `admin` (
@@ -38,7 +38,7 @@ CREATE TABLE `admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `admin`
+-- Dumping data untuk tabel `admin`
 --
 
 INSERT INTO `admin` (`id`, `name`, `UserName`, `Password`, `updationDate`, `Image`) VALUES
@@ -47,7 +47,7 @@ INSERT INTO `admin` (`id`, `name`, `UserName`, `Password`, `updationDate`, `Imag
 -- --------------------------------------------------------
 
 --
--- Table structure for table `contactus`
+-- Struktur dari tabel `contactus`
 --
 
 CREATE TABLE `contactus` (
@@ -62,16 +62,17 @@ CREATE TABLE `contactus` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `contactus`
+-- Dumping data untuk tabel `contactus`
 --
 
 INSERT INTO `contactus` (`id_cu`, `nama_visit`, `email_visit`, `telp_visit`, `pesan`, `tgl_posting`, `status`, `id`) VALUES
-(1, 'ME', 'gome@gmail.com', '2147483647', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum', '2017-06-18 10:03:07', 1, 0);
+(1, 'ME', 'gome@gmail.com', '2147483647', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum', '2017-06-18 10:03:07', 1, 0),
+(3, 'Agus Susanto', 'otnasussuga.online@gmail.com', '083816567977', 'asas', '2022-06-21 06:24:53', 0, 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `contactusinfo`
+-- Struktur dari tabel `contactusinfo`
 --
 
 CREATE TABLE `contactusinfo` (
@@ -83,7 +84,7 @@ CREATE TABLE `contactusinfo` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `contactusinfo`
+-- Dumping data untuk tabel `contactusinfo`
 --
 
 INSERT INTO `contactusinfo` (`id_info`, `alamat_kami`, `email_kami`, `telp_kami`, `id`) VALUES
@@ -92,7 +93,7 @@ INSERT INTO `contactusinfo` (`id_info`, `alamat_kami`, `email_kami`, `telp_kami`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `galery`
+-- Struktur dari tabel `galery`
 --
 
 CREATE TABLE `galery` (
@@ -102,10 +103,19 @@ CREATE TABLE `galery` (
   `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data untuk tabel `galery`
+--
+
+INSERT INTO `galery` (`id_galery`, `nama_galery`, `foto_galery`, `id`) VALUES
+(1, 'Galery 1', '1.jpg', 1),
+(2, 'Galery 2', '2.jpg', 2),
+(3, 'Galery 3', '3.jpg', 3);
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `member`
+-- Struktur dari tabel `member`
 --
 
 CREATE TABLE `member` (
@@ -118,18 +128,19 @@ CREATE TABLE `member` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `member`
+-- Dumping data untuk tabel `member`
 --
 
 INSERT INTO `member` (`id_user`, `nama_user`, `email`, `password`, `telp`, `alamat`) VALUES
 (2, 'Aguss', 'otnasussuga.online@gmail.com', '6ad14ba9986e3615423dfca256d04e3f', '08782392932', 'Subang'),
 (3, 's', 'sihhuhu@gmail.com', '03c7c0ace395d80182db07ae2c30f034', '22', 'd'),
-(4, 'Agus susanto', 'otnasussuga.77@gmail.com', '01c3c766ce47082b1b130daedd347ffd', '083816567977', 'Blanakan, Subang, Jawa Barat, Indonesia');
+(4, 'Agus susanto', 'otnasussuga.77@gmail.com', '01c3c766ce47082b1b130daedd347ffd', '083816567977', 'Blanakan, Subang, Jawa Barat, Indonesia'),
+(5, 'Kuya', 'kuya@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', '08888888', 'Kuya');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `paket`
+-- Struktur dari tabel `paket`
 --
 
 CREATE TABLE `paket` (
@@ -141,7 +152,7 @@ CREATE TABLE `paket` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `paket`
+-- Dumping data untuk tabel `paket`
 --
 
 INSERT INTO `paket` (`id_paket`, `nama_paket`, `harga`, `ket_paket`, `foto_paket`) VALUES
@@ -152,7 +163,7 @@ INSERT INTO `paket` (`id_paket`, `nama_paket`, `harga`, `ket_paket`, `foto_paket
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tblpages`
+-- Struktur dari tabel `tblpages`
 --
 
 CREATE TABLE `tblpages` (
@@ -163,20 +174,20 @@ CREATE TABLE `tblpages` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tblpages`
+-- Dumping data untuk tabel `tblpages`
 --
 
 INSERT INTO `tblpages` (`id`, `PageName`, `type`, `detail`) VALUES
 (1, 'Terms and Conditions', 'terms', '											<p align=\"justify\"><span style=\"color: rgb(153, 0, 0); font-size: small; font-weight: 700;\">This is Therms and Conditions</span></p><p align=\"justify\"><br></p>											'),
 (5, 'Rekening', 'rekening', '																																	123456789 Bank BRI a/n IRFAN'),
 (2, 'Privacy Policy', 'privacy', '											<span style=\"color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px; text-align: justify;\">This is Privacy Policy</span>'),
-(3, 'Tentang Kami', 'aboutus', '																																												<span style=\"color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, Arial, sans-serif; text-align: justify;\">Kami menyediakan berbagai macam paket jasa fotografi untuk anda</span>'),
+(3, 'Tentang Kami', 'aboutus', '																																												<span style=\"color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, Arial, sans-serif; text-align: justify;\">Kami Adalah Tim Fotografer Profesional Yang Benar-Benar Percaya Bahwa Kunci Kesuksesan Adalah Kesederhanaan Dan Efisiensi. Perjalanan Profesional Kami Dimulai Pada Tahun 2009 Hingga Saat Ini Dan Memiliki Pengalaman Lebih Dari 13 Tahun Di Semua Bidang Fotografi. Kami Memulai Fotografi Sebagai Hobi Dan Akhirnya Jatuh Cinta Pada Fotografi Orang. Tumbuh Bersama Klien Kami, Kami Belajar Banyak Tentang Cinta Keluarga, Suka Dan Duka, Karakter Dan Budaya.</span>'),
 (11, 'FAQs', 'faqs', '																						<div style=\"text-align: justify;\"><span style=\"font-size: 1em; color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, Arial, sans-serif;\">Q : Bagaimana cara booking paket jasa fotografi disini?</span></div><div style=\"text-align: justify;\"><span style=\"font-size: 1em; color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, Arial, sans-serif;\">A : Pertama anda harus mendaftar terlebih dahulu sebagai member melalui menu yang telah disediakan.</span></div>																						');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `transaksi`
+-- Struktur dari tabel `transaksi`
 --
 
 CREATE TABLE `transaksi` (
@@ -194,7 +205,7 @@ CREATE TABLE `transaksi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `transaksi`
+-- Dumping data untuk tabel `transaksi`
 --
 
 INSERT INTO `transaksi` (`id_trx`, `email`, `id_paket`, `tgl_trx`, `stt_trx`, `tgl_take`, `jam_take`, `catatan`, `tgl_bayar`, `bukti_bayar`, `ubah_tgl`) VALUES
@@ -207,95 +218,95 @@ INSERT INTO `transaksi` (`id_trx`, `email`, `id_paket`, `tgl_trx`, `stt_trx`, `t
 --
 
 --
--- Indexes for table `admin`
+-- Indeks untuk tabel `admin`
 --
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `contactus`
+-- Indeks untuk tabel `contactus`
 --
 ALTER TABLE `contactus`
   ADD PRIMARY KEY (`id_cu`);
 
 --
--- Indexes for table `contactusinfo`
+-- Indeks untuk tabel `contactusinfo`
 --
 ALTER TABLE `contactusinfo`
   ADD PRIMARY KEY (`id_info`);
 
 --
--- Indexes for table `galery`
+-- Indeks untuk tabel `galery`
 --
 ALTER TABLE `galery`
   ADD PRIMARY KEY (`id_galery`);
 
 --
--- Indexes for table `member`
+-- Indeks untuk tabel `member`
 --
 ALTER TABLE `member`
   ADD PRIMARY KEY (`id_user`);
 
 --
--- Indexes for table `paket`
+-- Indeks untuk tabel `paket`
 --
 ALTER TABLE `paket`
   ADD PRIMARY KEY (`id_paket`);
 
 --
--- Indexes for table `tblpages`
+-- Indeks untuk tabel `tblpages`
 --
 ALTER TABLE `tblpages`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `transaksi`
+-- Indeks untuk tabel `transaksi`
 --
 ALTER TABLE `transaksi`
   ADD PRIMARY KEY (`id_trx`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `admin`
+-- AUTO_INCREMENT untuk tabel `admin`
 --
 ALTER TABLE `admin`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `contactus`
+-- AUTO_INCREMENT untuk tabel `contactus`
 --
 ALTER TABLE `contactus`
-  MODIFY `id_cu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_cu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `contactusinfo`
+-- AUTO_INCREMENT untuk tabel `contactusinfo`
 --
 ALTER TABLE `contactusinfo`
   MODIFY `id_info` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `galery`
+-- AUTO_INCREMENT untuk tabel `galery`
 --
 ALTER TABLE `galery`
-  MODIFY `id_galery` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_galery` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `member`
+-- AUTO_INCREMENT untuk tabel `member`
 --
 ALTER TABLE `member`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `paket`
+-- AUTO_INCREMENT untuk tabel `paket`
 --
 ALTER TABLE `paket`
   MODIFY `id_paket` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `tblpages`
+-- AUTO_INCREMENT untuk tabel `tblpages`
 --
 ALTER TABLE `tblpages`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;

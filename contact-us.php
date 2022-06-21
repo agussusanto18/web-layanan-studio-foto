@@ -8,7 +8,7 @@ $name=$_POST['fullname'];
 $email=$_POST['email'];
 $contactno=$_POST['contactno'];
 $message=$_POST['message'];
-$sql1="INSERT INTO contactus (nama_visit,email_visit,telp_visit,pesan) VALUES('$name','$email','$contactno','$message')";
+$sql1="INSERT INTO contactus (nama_visit,email_visit,telp_visit,pesan,status,id) VALUES('$name','$email','$contactno','$message',0,0)";
 $lastInsertId = mysqli_query($koneksidb, $sql1);
 if($lastInsertId){
 	$msg="Pesan Terkirim. Kami akan menghubungi anda secepatnya.";

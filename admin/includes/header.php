@@ -1,5 +1,5 @@
 <div class="brand clearfix">
-	<a href="dashboard.php" style="font-size: 20px;"><img src="img/newicon.jpg" width="250px" height="60px"></a>  
+	<a href="dashboard.php" style="font-size: 20px;"><img src="img/photo-studio-logo.jpg" width="250px" height="60px"></a>  
 		<span class="menu-btn"><i class="fa fa-bars"></i></span>
 		<ul class="ts-profile-nav">
             <?php

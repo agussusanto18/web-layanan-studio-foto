@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-3 col-md-3">
-          <div class="logo"><a href="index.php"><img src="admin/img/icon.png" width="100px" height="60px" alt="image"/></a> </div>
+          <div class="logo"><a href="index.php"><img src="admin/img/photo-studio-logo.jpg" width="150px" height="60px" alt="image"/></a> </div>
         </div>
         <div class="col-sm-8 col-md-8">
           <div class="header_info">
