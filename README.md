@@ -1,3 +1,3 @@
 # fotografi
 
-Link : https://jasaphoto.demo.aguss.my.id
+Link : https://demo.aguss.my.id
