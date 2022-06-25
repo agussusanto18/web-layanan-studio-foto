@@ -22,3 +22,4 @@
 [17-Jun-2022 03:29:11 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/otnasussuga/public_html/demo/jasaphoto/admin/sewaview.php on line 5
 [17-Jun-2022 06:47:53 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/otnasussuga/public_html/demo/jasaphoto/admin/sewaview.php on line 5
 [17-Jun-2022 06:49:09 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/otnasussuga/public_html/demo/jasaphoto/admin/userview.php on line 5
+[25-Jun-2022 08:21:02 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/uajtug5f/public_html/aguss.my.id/demo/admin/sewaview.php on line 5

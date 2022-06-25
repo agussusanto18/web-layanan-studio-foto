@@ -59,7 +59,7 @@ echo "<script>alert('Something went wrong. Please try again');</script>";
           </div>
         </div>
         <div class="col-md-6 col-md-pull-6">
-          <p class="copy-right">&copy;2019 Sistem Informasi Penyediaan Jasa Fotografi Berbasis Web.
+          <p class="copy-right">&copy;2020 Sistem Informasi Penyediaan Jasa foto Berbasis Web.
           </p>
         </div>
       </div>
