@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sistem informasi layanan studio foto
 
 Kelompok:
